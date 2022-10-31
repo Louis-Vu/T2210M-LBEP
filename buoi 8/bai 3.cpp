@@ -12,12 +12,13 @@ int main(){
 	int x;
 	printf("nhap x: ");
 	scanf("%d",&x);
-	int d=0;
+	bool d=false;
 	for(i=0;i<n;i++){
 		if(arr[i]==x){
-			d++;
+			d=true;
+			printf("x thuoc mang");
+			break;
 		}
 	}
-		if(d==1) printf("x thuoc mang ");
-		else printf("x khong thuoc mang");
+	if(d==false) printf("x ko thuoc mang");
 }
